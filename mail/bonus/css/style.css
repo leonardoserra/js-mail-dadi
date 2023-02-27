@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.container{
+    transform: translateX(-25%);
+    min-width: 500px;
+    text-align: center;
+    margin: auto;
+}
