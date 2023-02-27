@@ -32,7 +32,6 @@ if(playerPoint < computerPoint){
 } else if(playerPoint = computerPoint){
     console.log('pareggio');
     message.innerHTML = 'pareggio';
-
 }
 
 });
