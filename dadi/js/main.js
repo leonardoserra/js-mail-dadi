@@ -4,9 +4,16 @@
     Stabilire il vincitore, in base a chi fa il punteggio più alto.
 */
 
+const button = document.getElementById('button');
+const message = document.getElementById('message');
+
+
+button.addEventListener('click', function(){
+
+message.classList.remove('d-none');
+message.classList.add('d-inline-block', 'box');
 
 const points = [];
-
 for(let x = 0; x<=1; x++){
     points.push(Math.floor(Math.random() * 6 + 1));
     console.log(points[x]);
@@ -14,9 +21,15 @@ for(let x = 0; x<=1; x++){
 
 if(points[0] < points[1]){
     console.log('vince il computer');
+    message.innerHTML = 'vince il computer';
 } else if(points[0] > points[1]){
     console.log('vince il player');
+    message.innerHTML = 'vince il player';
 } else if(points[0] = points[1]){
     console.log('pareggio');
+    message.innerHTML = 'pareggio';
+
 }
+
+});
     
