@@ -15,7 +15,6 @@ for (let i = 0; i < mailList.length; i++) {
     
     if (userMail == mailList[i]){
         interruttore = 'benvenuto!';
-    
     }
 }
 

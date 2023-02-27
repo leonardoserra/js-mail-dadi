@@ -12,23 +12,41 @@ console.log(mailList);
 const button = document.getElementById('button');
 const userMailField = document.getElementById('mail');
 const message = document.getElementById('message');
+
 button.addEventListener('click', function(){
+    let interruttore = 'accesso negato';
     let userMail = userMailField.value;
     console.log(userMail);
 
     for (let i = 0; i < mailList.length; i++) {
         
         if (userMail == mailList[i]){
-            console.log('benvenuto!');
-            message.innerHTML = 'benvenuto!';
-            i = mailList.length - 1;
-        } else if(i == mailList.length -1){
-            console.log('accesso negato');
-            message.innerHTML = 'accesso negato';
-        }
-        
+            interruttore = 'benvenuto!';
+        } 
     }
+
+    message.innerHTML = interruttore;
+
 })
+
+
+// button.addEventListener('click', function(){
+//     let userMail = userMailField.value;
+//     console.log(userMail);
+
+//     for (let i = 0; i < mailList.length; i++) {
+        
+//         if (userMail == mailList[i]){
+//             console.log('benvenuto!');
+//             message.innerHTML = 'benvenuto!';
+//             i = mailList.length - 1;
+//         } else if(i == mailList.length -1){
+//             console.log('accesso negato');
+//             message.innerHTML = 'accesso negato';
+//         }
+        
+//     }
+// })
 
 
 
