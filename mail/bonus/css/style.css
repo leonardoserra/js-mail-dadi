@@ -6,8 +6,11 @@
 
 
 .container{
-    transform: translateX(-25%);
-    min-width: 500px;
+    width: 500px;
     text-align: center;
-    margin: auto;
+    margin: 100px auto;
+}
+
+img{
+    transform: translateX(-10%);
 }
