@@ -8,3 +8,14 @@
     const mailList = ['mario@gmail.com', 'luca@gmail.com', 'anna@gmail.com', 'peppiniello@gmail.com'];
 
     console.log(mailList);
+
+    let userMail = prompt('inserisci la tua mail per accedere');
+
+    for(let i = 0; i < mailList.lenght; i++){
+        
+        if (userMail == mailList[i]){
+            console.log('benvenuto!');
+        } else{
+            console.log('accesso negato');
+        }
+    }
