@@ -14,10 +14,10 @@ const userMailField = document.getElementById('mail');
 const message = document.getElementById('message');
 
 button.addEventListener('click', function(){
-    let interruttore = 'accesso negato';
     let userMail = userMailField.value;
     console.log(userMail);
-
+    
+    let interruttore = 'accesso negato';
     for (let i = 0; i < mailList.length; i++) {
         
         if (userMail == mailList[i]){
@@ -25,8 +25,8 @@ button.addEventListener('click', function(){
         } 
     }
 
+    
     message.innerHTML = interruttore;
-
 })
 
 
