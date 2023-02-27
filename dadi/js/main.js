@@ -21,10 +21,10 @@ for(let x = 0; x<=1; x++){
 
 if(points[0] < points[1]){
     console.log('vince il computer');
-    message.innerHTML = 'vince il computer';
+    message.innerHTML = 'vince il re, verrai decapitato';
 } else if(points[0] > points[1]){
     console.log('vince il player');
-    message.innerHTML = 'vince il player';
+    message.innerHTML = 'hai vinto, per questa volta hai salva la vita';
 } else if(points[0] = points[1]){
     console.log('pareggio');
     message.innerHTML = 'pareggio';
