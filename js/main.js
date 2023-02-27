@@ -10,12 +10,12 @@
     console.log(mailList);
 
     let userMail = prompt('inserisci la tua mail per accedere');
-
-    for(let i = 0; i < mailList.lenght; i++){
+    for (let i = 0; i < mailList.length; i++) {
         
         if (userMail == mailList[i]){
             console.log('benvenuto!');
         } else{
             console.log('accesso negato');
         }
+        
     }
