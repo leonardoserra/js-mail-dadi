@@ -14,7 +14,8 @@
         
         if (userMail == mailList[i]){
             console.log('benvenuto!');
-        } else{
+            i = mailList.length - 1;
+        } else if(i = mailList.length - 1){
             console.log('accesso negato');
         }
         
