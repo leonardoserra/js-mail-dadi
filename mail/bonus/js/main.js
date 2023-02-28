@@ -15,18 +15,18 @@ const message = document.getElementById('message');
 
 button.addEventListener('click', function(){
     let userMail = userMailField.value;
+    let interruttore = 'accesso negato';//puoi mettere false
     console.log(userMail);
     
-    let interruttore = 'accesso negato';
     for (let i = 0; i < mailList.length; i++) {
         
         if (userMail == mailList[i]){
-            interruttore = 'benvenuto!';
+            interruttore = 'benvenuto!';//puoi mettere true
         } 
     }
 
     
-    message.innerHTML = interruttore;
+    message.innerHTML = interruttore;//se mettevi i valori booleani poi si fa un if 
 })
 
 
